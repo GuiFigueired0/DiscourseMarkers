@@ -1,0 +1,140 @@
+marker,categoria
+allora,apertura
+bene,apertura
+dunque,apertura
+ecco,apertura
+insomma,apertura
+cioè,apertura
+senti,apertura
+guarda,apertura
+beh,apertura
+sa,apertura
+ora,apertura
+ok,apertura
+oh,apertura
+ehm,apertura
+mmm,apertura
+comunque,transizione
+a proposito,transizione
+tra l’altro,transizione
+per tornare a,transizione
+tornando a,transizione
+per quanto riguarda,transizione
+in merito a,transizione
+a questo proposito,transizione
+detto questo,transizione
+dopo di che,transizione
+ebbene,transizione
+in ogni caso,transizione
+a ogni modo,transizione
+in sostanza,transizione
+quindi,chiusura
+in conclusione,chiusura
+in sintesi,chiusura
+in definitiva,chiusura
+tutto qui,chiusura
+ecco tutto,chiusura
+basta così,chiusura
+vale a dire,riformulazione
+in altre parole,riformulazione
+voglio dire,riformulazione
+ovvero,riformulazione
+anzi,riformulazione
+meglio,riformulazione
+ossia,riformulazione
+per esempio,riformulazione
+ad esempio,riformulazione
+facciamo che,riformulazione
+mettiamo che,riformulazione
+praticamente,riformulazione
+nel senso che,riformulazione
+o meglio,riformulazione
+o piuttosto,riformulazione
+intendo dire,riformulazione
+proprio,focalizzazione
+appunto,focalizzazione
+infatti,focalizzazione
+in effetti,focalizzazione
+esatto,focalizzazione
+assolutamente,focalizzazione
+davvero,focalizzazione
+perfino,focalizzazione
+addirittura,focalizzazione
+naturalmente,focalizzazione
+ovviamente,focalizzazione
+in realtà,focalizzazione
+del resto,focalizzazione
+effettivamente,focalizzazione
+sì,accordo
+certo,accordo
+giusto,accordo
+vero,accordo
+ok,accordo
+mh mh,accordo
+già,accordo
+eh già,accordo
+d’accordo,accordo
+ovvio,accordo
+appunto così,accordo
+proprio così,accordo
+no?,richiesta_conferma
+vero?,richiesta_conferma
+giusto?,richiesta_conferma
+d’accordo?,richiesta_conferma
+capito?,richiesta_conferma
+eh?,richiesta_conferma
+ok?,richiesta_conferma
+va bene?,richiesta_conferma
+non è vero?,richiesta_conferma
+ehm,turno
+mmm,turno
+diciamo,turno
+tipo,turno
+come dire,turno
+un attimo,turno
+aspetta,turno
+scusa,turno
+senti,turno
+guarda,turno
+ma,turno
+ecco,turno
+dai,turno
+su,turno
+boh,turno
+mah,turno
+sai,mitigazione
+sapete,mitigazione
+mi pare,mitigazione
+forse,mitigazione
+magari,mitigazione
+un po’,mitigazione
+per così dire,mitigazione
+se vuoi,mitigazione
+se posso,mitigazione
+insomma,mitigazione
+beh dai,mitigazione
+secondo me,mitigazione
+a dire il vero,mitigazione
+ma dai,reazione_emotiva
+ma va,reazione_emotiva
+figurati,reazione_emotiva
+eh già,reazione_emotiva
+eh beh,reazione_emotiva
+caspita,reazione_emotiva
+cavolo,reazione_emotiva
+mannaggia,reazione_emotiva
+ma guarda,reazione_emotiva
+e ti pareva,reazione_emotiva
+mah,reazione_emotiva
+boh,reazione_emotiva
+vabbe’,reazione_emotiva
+va bene dai,reazione_emotiva
+però,connettivo
+tuttavia,connettivo
+anzi,connettivo
+eppure,connettivo
+infatti,connettivo
+perché,connettivo
+poi,connettivo
+ora,connettivo
+invece,connettivo
