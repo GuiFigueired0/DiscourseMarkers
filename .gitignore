@@ -2,7 +2,11 @@
 
 /playground
 /notes
+
 /results
+/models
+data/*.csv
 
 /.ssh
 /.idea
+sync_data.sh
