@@ -4,14 +4,11 @@ from transformers import AutoModel
 class DynamicMultiTaskModel(nn.Module):
     def __init__(self, config):
         super(DynamicMultiTaskModel, self).__init__()
-
-        # 1. The Shared Encoder (The "Discourse Marker" Base)
         self.encoder = AutoModel.from_pretrained(config['model_name'])
         self.hidden_size = self.encoder.config.hidden_size
         self.dropout = nn.Dropout(0.1)
 
-        # 2. Dynamic Dictionary for Task Heads
-        # ModuleDict allows us to add sub-modules by string keys
+        # Dynamic Dictionary for Task Heads
         self.heads = nn.ModuleDict()
 
     def add_task_head(self, task_name, num_labels):
@@ -28,12 +25,6 @@ class DynamicMultiTaskModel(nn.Module):
         )
 
     def forward(self, input_ids, attention_mask, task_keys=None):
-        """
-        task_keys: A list or string indicating which head to use.
-                   If it's a list (e.g., ['anli', 'dm']), we assume the batch
-                   is split: top half = 'anli', bottom half = 'dm'.
-        """
-        # 1. Shared Encoder Pass
         outputs = self.encoder(input_ids=input_ids, attention_mask=attention_mask)
         cls_embedding = outputs.last_hidden_state[:, 0, :]  # [CLS] token
 
@@ -62,4 +53,4 @@ class DynamicMultiTaskModel(nn.Module):
             return out_a, out_b
 
         else:
-            return cls_embedding  # Return raw embeddings if no task specified
+            return cls_embedding

@@ -1,11 +1,13 @@
 /venv
 
-/playground
-/notes
-
-/results
+/mining/dump
 /models
-data/*.csv
+/src/saved_models
+/data/*.csv
+/src/data/*.csv
+/src/data/*.tsv
+/src/data/*.txt
+/src/data/*.json
 
 /.ssh
 /.idea

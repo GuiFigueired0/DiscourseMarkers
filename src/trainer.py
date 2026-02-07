@@ -4,13 +4,8 @@ from torch.optim import AdamW
 from tqdm import tqdm
 from sklearn.metrics import accuracy_score, f1_score
 
-
 class MultiTaskTrainer:
     def __init__(self, model, config, device, task_configs, class_weights=None):
-        """
-        class_weights: Dict mapping task_name to tensor of weights.
-                       e.g. {'dm': torch.tensor([1.0, 5.0, ...])}
-        """
         self.model = model.to(device)
         self.config = config
         self.device = device
@@ -18,22 +13,17 @@ class MultiTaskTrainer:
 
         self.optimizer = AdamW(model.parameters(), lr=float(config['lr']), weight_decay=0.01)
 
-        # Store class weights if provided
         self.loss_fcts = {}
         for task, weights in (class_weights or {}).items():
             if weights is not None:
                 self.loss_fcts[task] = nn.CrossEntropyLoss(weight=weights.to(device))
 
-        # Default loss for tasks without specific weights
         self.default_loss_fct = nn.CrossEntropyLoss()
 
     def get_loss_fct(self, task_name):
         return self.loss_fcts.get(task_name, self.default_loss_fct)
 
     def train_epoch(self, dataloader, epoch_idx, task_mode='mixed'):
-        """
-        task_mode: 'mixed' (MTL), 'anli' (Single), 'dm' (Single)
-        """
         self.model.train()
         total_loss = 0
         loop = tqdm(dataloader, desc=f"Epoch {epoch_idx} [{task_mode}]")

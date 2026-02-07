@@ -1,0 +1,37 @@
+language	task	type	dataset	mode	beta	acc	f1
+en	Topic Classification	Non-NLI	ag_news	baseline	0.0	0,94921	0,94909
+en	Topic Classification	Non-NLI	ag_news	mtl	0.6	0,95250	0,95261
+en	Topic Classification	Non-NLI	ag_news	transfer	0.0	0,94921	0,94909
+en	Semantic Textual Similarity	NLI-Like	stsb_multi_mt	baseline	0.0	0,86439	0,86437
+en	Semantic Textual Similarity	NLI-Like	stsb_multi_mt	mtl	0.6	0,87164	0,87164
+en	Semantic Textual Similarity	NLI-Like	stsb_multi_mt	transfer	0.0	0,86294	0,86294
+en	Natural Language Inference	NLI-Like	nli_multi	baseline	0.0	0,80495	0,80267
+en	Natural Language Inference	NLI-Like	nli_multi	mtl	0.6	0,80286	0,79992
+en	Natural Language Inference	NLI-Like	nli_multi	transfer	0.0	0,80286	0,79909
+en	Hate Speech Detection	Non-NLI	tweet_eval	baseline	0.0	0,56094	0,53928
+en	Hate Speech Detection	Non-NLI	tweet_eval	mtl	0.6	0,55488	0,52576
+en	Hate Speech Detection	Non-NLI	tweet_eval	transfer	0.0	0,52929	0,49404
+it	Topic Classification	Non-NLI	italic	baseline	0.0	0,90620	0,89773
+it	Topic Classification	Non-NLI	italic	mtl	0.2	0,91489	0,90313
+it	Topic Classification	Non-NLI	italic	transfer	0.0	0,90143	0,88890
+it	Semantic Textual Similarity	NLI-Like	stsb_multi_mt	baseline	0.0	0,78825	0,78759
+it	Semantic Textual Similarity	NLI-Like	stsb_multi_mt	mtl	0.2	0,79912	0,79894
+it	Semantic Textual Similarity	NLI-Like	stsb_multi_mt	transfer	0.0	0,80130	0,80130
+it	Natural Language Inference	NLI-Like	nli_multi	baseline	0.0	0,71266	0,70704
+it	Natural Language Inference	NLI-Like	nli_multi	mtl	0.2	0,71085	0,70666
+it	Natural Language Inference	NLI-Like	nli_multi	transfer	0.0	0,71609	0,71102
+it	Hate Speech Detection	Non-NLI	haspeede	baseline	0.0	0,80847	0,79972
+it	Hate Speech Detection	Non-NLI	haspeede	mtl	0.2	0,80701	0,80023
+it	Hate Speech Detection	Non-NLI	haspeede	transfer	0.0	0,78654	0,77953
+pt	Topic Classification	Non-NLI	folhasp	baseline	0.0	0,92603	0,89564
+pt	Topic Classification	Non-NLI	folhasp	mtl	0.2	0,92322	0,89385
+pt	Topic Classification	Non-NLI	folhasp	transfer	0.0	0,92172	0,89074
+pt	Semantic Textual Similarity	NLI-Like	stsb_multi_mt	baseline	0.0	0,80638	0,80566
+pt	Semantic Textual Similarity	NLI-Like	stsb_multi_mt	mtl	0.4	0,82233	0,82233
+pt	Semantic Textual Similarity	NLI-Like	stsb_multi_mt	transfer	0.0	0,81073	0,81057
+pt	Natural Language Inference	NLI-Like	nli_multi	baseline	0.0	0,73028	0,72445
+pt	Natural Language Inference	NLI-Like	nli_multi	mtl	0.6	0,73533	0,70666
+pt	Natural Language Inference	NLI-Like	nli_multi	transfer	0.0	0,73114	0,72558
+pt	Hate Speech Detection	Non-NLI	hatebr	baseline	0.0	0,92571	0,92571
+pt	Hate Speech Detection	Non-NLI	hatebr	mtl	1.0	0,92857	0,92857
+pt	Hate Speech Detection	Non-NLI	hatebr	transfer	0.0	0,91857	0,91856
